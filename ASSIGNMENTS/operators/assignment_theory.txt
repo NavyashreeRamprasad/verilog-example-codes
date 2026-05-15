@@ -1,0 +1,84 @@
+2. a) i) B=&a;
+		1)B=0,means any one of the bit of a is 0
+		2)B=1, means all of the bits of a is 1
+	ii) B=^a;
+		1)B=1 , a contains odd numbers of 1's
+		2)B=0 , a contains even number of 1's
+	c)In Verilog, a vector is a multi-bit signal (e.g., reg [7:0] a) and supports almost all operators such as arithmetic (+, -), relational (==, >), logical (&&, ||), bitwise (&, |, ^, ~), shift (<<, >>), and reduction operators (&a,|a, ^a). This is because a vector is treated as a single binary value or bit-string. In contrast, an array (e.g., reg [7:0] mem[0:15]) is a collection of vectors and does not support operations on the entire array as a whole; operations like mem1 = mem2, mem1 + mem2, or mem1 == mem2 are not allowed. However, when accessing a single element of the array (e.g., mem[i]), that element behaves like a vector, and all operations become possible on it. Additionally, in Verilog, the same operator symbol can have different meanings depending on context—for example, & acts as a bitwise AND when used between two vectors (a & b) but as a reduction AND when applied to a single vector (&a), illustrating how operator behavior depends on usage.
+	d)a & b → bitwise AND
+	&a → reduction AND
+	a && b → logical AND
+	~& → NAND (bitwise or reduction depending on usage)
+	e) i) A && B => 0
+	   ii) A || !B => 1
+	   iii) C || B => x (for A=6,B=0,C=x)
+	   v) for A=6,B=-9, C=x
+			A && B => 1
+	   		A || !B => 1
+	   		C || B => x 
+
+3) a) here << is the operator , b and c are the operands
+4) The shift operator makes multiplication easier because a left shift (<<) directly corresponds to multiplying a numb	er by powers of 2. For example, shifting a binary number left by 1 position multiplies it by 2, by 2 positions multi	plies it by 4, and so on. This is much simpler to implement in hardware than a full multiplication circuit, which 	requires more complex logic and higher delay.
+5)Logical NOT (!) treats the entire operand as a single truth value. It checks whether the value is zero or non-zero. 	If the operand is zero, the result is 1 (TRUE), and if the operand is non-zero, the result is 0 (FALSE). Importantly	, the output is always a single-bit result, regardless of the input width. For example, if a = 4'b1010, then !a = 	0 because a is non-zero.
+	Bitwise inversion (~), on the other hand, operates on each bit individually. It flips every bit of the operand: 1 		becomes 0 and 0 becomes 1. The result has the same width as the input. For example, if a = 4'b1010, then ~a = 4'	b0101.
+	a)For the expression where a = -1 and b = 1, evaluating c = a && b, the logical AND operator (&&) checks only whet		her the operands are zero or non-zero. Since both -1 and 1 are non-zero, they are treated as TRUE. Therefore, TR		UE &	& TRUE results in 1, so c = 1.
+
+6)In the case of real a; integer b; real c; with a = 3, b = 10, and c = b / a, Verilog automatically converts the integer b into a real number before performing the division. Hence, the operation becomes 10.0 / 3, which gives approximately 3.3333, so c ≈ 3.33.
+
+7)a is a 6-bit register and stores the value 95, which in binary is 101111. The variable b has a 2-bit width (from index −2 to −1), so when assigning 69, only the least significant 2 bits are stored, which is 01. During bitwise operations, b is extended to match the width of a. In the expression c = a & b, the result becomes 000001, which is 1 in decimal. In the expression c = a | b, the result becomes 101111, which is 47 in decimal.
+
+8)Unary reduction operators simplify vector analysis by condensing a multi-bit signal into a single bit using a bitwise logic gate.
+Here is why they are easier to use:
+Instead of writing (a[0] & a[1] & a[2] & a[3]), you simply write &a.
+They work regardless of the vector's width. If you change a bus from 8 bits to 16 bits, the code |bus remains the same
+
+9)1. Vectors (Packed)
+	Declared as: reg [7:0] my_vector;
+	Single Entity: Verilog treats this as a single multi-bit number.
+	Operators: You can use all operators (+, -, &, |, <<, etc.) directly on the variable.
+	Assignment: You can assign a value to the whole vector at once: my_vector = 8'hA5;.
+
+	2. Arrays (Unpacked / Memories)
+	Declared as: reg my_array [7:0]; (Note the range is after the name).
+	Collection of Scalars: Verilog treats this as a group of separate variables (often called a "memory").
+	Operators: Almost all operators are forbidden on the array as a whole. You cannot do my_array + 1 or if (my_array1 == my_array2).
+	Assignment: You cannot assign an entire array at once. You must assign each element individually using an index:
+	my_array[0] = 1'b1;
+	my_array[1] = 1'b0;
+
+	No Comparison: Even if two arrays are identical, you cannot compare them without using a for loop to check every single index.
+
+11)Arithmetic: + - * / %
+	Relational: > < >= <=
+	Equality: == != === !==
+	Logical: && || !
+	Bitwise: & | ^ ~
+	Reduction: & | ^ ~& ~| ~^
+	Shift: << >>
+	Concatenation: { }
+	Replication: {n{value}}
+	Conditional (Ternary): ?:
+
+15) a) y = -1 ? 10 : 20;
+	Result: y = 10
+	Reason: In Verilog, any non-zero integer is treated as logical TRUE. Since -1 is non-zero, the first expression (10) is selected.
+	b) y = (-1 == 1) ? 10 : 20;
+	Result: y = 20
+	Reason: The expression -1 == 1 is FALSE. Therefore, the second expression (20) is selected.
+	c) y = (-1 == -1) ? 10 : 20;
+	Result: y = 10
+	Reason: The expression -1 == -1 is TRUE, so the first expression (10) is selected.
+
+g)
+i)Concise Code
+Instead of writing multiple lines of procedural code, you can describe logic in a single line. This is particularly useful for simple assignments and signal routing.
+
+ii)Flexible Placement (assign and always blocks)
+One of the biggest advantages of the conditional operator is where it can be used:
+In assign statements: It is used for continuous assignment to model combinational logic outside of procedural blocks.
+In always blocks: It can also be used inside procedural blocks (like always @(*)) to assign values to reg types.
+The if-else Constraint: As your image correctly notes, if-else statements are procedural. They can only be used inside initial or always blocks. They cannot exist in a continuous assignment.
+
+iii) Why assign y = if(a) b else c; fails:
+In Verilog, an assign statement expects an expression on the right-hand side. if-else is a statement—a structural command that directs the flow of execution—not a value-returning expression.
+Conversely, a ? b : c is an expression that resolves to a specific value, making it compatible with the assign keyword

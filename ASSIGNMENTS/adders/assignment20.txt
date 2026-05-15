@@ -1,0 +1,17 @@
+20. Hardware consists of physical electronic components that operate concurrently with strict timing constraints and are difficult to modify after fabrication, whereas software is a set of sequential instructions that is flexible, easily modifiable, and not inherently time-dependent.
+
+21(a). Verilog implements the concept of time using simulation delays (#), event controls (like @(posedge clk)), and timestamps to model when changes occur in a digital circuit.
+
+21(b). Verilog implements structure by representing a design as a hierarchy of interconnected modules and logic gates, similar to how actual hardware components are connected.
+
+21(c). Verilog supports concurrent execution by allowing multiple always and assign blocks to run in parallel, reflecting the inherent parallelism of hardware.
+
+21(d). Verilog represents states using sequential elements like flip-flops, enabling the modeling of finite state machines where outputs depend on current states and inputs.
+
+22. Verilog differs from C in that it is used to model parallel hardware behavior with explicit timing and concurrency, while C is a sequential programming language used to describe step-by-step algorithms without inherent timing control.
+
+23. Verilog is called a hardware description language because it describes the structure and behavior of digital circuits at various abstraction levels and can be synthesized into physical hardware, unlike traditional programming languages.
+
+24. EDA stands for Electronic Design Automation, which refers to software tools used for designing, simulating, synthesizing, and verifying electronic circuits.
+
+25. EDA tools make the VLSI design process easier by automating complex tasks such as circuit design entry, functional simulation, logic synthesis, placement and routing, and timing verification, thereby reducing design time and improving accuracy and reliability.

@@ -1,4 +1,4 @@
 vlib work
-vlog assignment16.v
+vlog assignment19.v
 vsim tb 
 run -all

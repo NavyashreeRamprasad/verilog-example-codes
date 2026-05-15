@@ -53,26 +53,70 @@ R9
 R10
 !i113 1
 R11
+vcomp
+!s110 1776690417
+!i10b 1
+!s100 IVV1RFh`jUe;=GAg4>^f]2
+R2
+I2K8TRaSZBHmS2jzTKgPOC0
+R3
+R0
+w1776689815
+8assignment18.v
+Fassignment18.v
+!i122 67
+L0 1 7
+R7
+r1
+!s85 0
+31
+!s108 1776690417.000000
+!s107 assignment18.v|
+!s90 -reportprogress|300|assignment18.v|
+!i113 1
+R11
+vcomp2
+Z12 !s110 1776690486
+!i10b 1
+!s100 L=YaPk?@M5Z5ncRzbEUPn2
+R2
+IAV><LJ26?=UhKK:c>_f7E2
+R3
+R0
+Z13 w1776690484
+Z14 8assignment19.v
+Z15 Fassignment19.v
+!i122 69
+L0 1 35
+R7
+r1
+!s85 0
+31
+Z16 !s108 1776690486.000000
+!s107 assignment19.v|
+Z17 !s90 -reportprogress|300|assignment19.v|
+!i113 1
+R11
 vdecoder
-Z12 !s110 1776535955
+Z18 !s110 1776535955
 !i10b 1
 !s100 HXdD?jKY9?6J7TbBKjdS<0
 R2
 IeHKoJ2k`U:zW]ECikKiZ60
 R3
 R0
-Z13 w1776535950
-Z14 8assignment12.v
-Z15 Fassignment12.v
+Z19 w1776535950
+Z20 8assignment12.v
+Z21 Fassignment12.v
 !i122 44
 L0 72 6
 R7
 r1
 !s85 0
 31
-Z16 !s108 1776535955.000000
-Z17 !s107 assignment12.v|
-Z18 !s90 -reportprogress|300|assignment12.v|
+Z22 !s108 1776535955.000000
+Z23 !s107 assignment12.v|
+Z24 !s90 -reportprogress|300|assignment12.v|
 !i113 1
 R11
 vencoder
@@ -106,8 +150,8 @@ I@L02dG`ahHL;mATF]bzK[1
 R3
 R0
 w1776449314
-R14
-R15
+R20
+R21
 !i122 36
 L0 28 5
 R7
@@ -115,52 +159,52 @@ r1
 !s85 0
 31
 !s108 1776449318.000000
-R17
-R18
+R23
+R24
 !i113 1
 R11
 vfa
-Z19 !s110 1776185875
+Z25 !s110 1776185875
 !i10b 1
 !s100 [nJAnaZH5ddEdmQeV98ae3
 R2
 IWe;l`KfF36ZXSN8WXe57[0
 R3
 R0
-Z20 w1776185852
-Z21 8assignment2a.v
-Z22 Fassignment2a.v
+Z26 w1776185852
+Z27 8assignment2a.v
+Z28 Fassignment2a.v
 !i122 7
 L0 15 8
 R7
 r1
 !s85 0
 31
-Z23 !s108 1776185875.000000
-Z24 !s107 assignment2a.v|tbassignment2a.v|
-Z25 !s90 -reportprogress|300|tbassignment2a.v|
+Z29 !s108 1776185875.000000
+Z30 !s107 assignment2a.v|tbassignment2a.v|
+Z31 !s90 -reportprogress|300|tbassignment2a.v|
 !i113 1
 R11
 vfa8
-R19
+R25
 !i10b 1
 !s100 ABedaN6A?3Xc]]z@>EV]M3
 R2
 IBQ_>dgRJRa?i]6GKPGdBV3
 R3
 R0
-R20
-R21
-R22
+R26
+R27
+R28
 !i122 7
 L0 24 19
 R7
 r1
 !s85 0
 31
-R23
-R24
-R25
+R29
+R30
+R31
 !i113 1
 R11
 vfull_adder
@@ -171,18 +215,18 @@ R2
 I=E@NkP9Oe7LMV]5XjPOXB0
 R3
 R0
-Z26 w1776187392
-Z27 8assignment3.v
-Z28 Fassignment3.v
+Z32 w1776187392
+Z33 8assignment3.v
+Z34 Fassignment3.v
 !i122 10
 L0 1 6
 R7
 r1
 !s85 0
 31
-Z29 !s108 1776187398.000000
-Z30 !s107 assignment3.v|
-Z31 !s90 -reportprogress|300|assignment3.v|
+Z35 !s108 1776187398.000000
+Z36 !s107 assignment3.v|
+Z37 !s90 -reportprogress|300|assignment3.v|
 !i113 1
 R11
 vfull_adder_tb
@@ -193,11 +237,77 @@ R2
 Ifb_QFEg?M35c1lVWWn`1@0
 R3
 R0
+R32
+R33
+R34
+!i122 10
+L0 8 25
+R7
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R11
+vfull_sub
+Z38 !s110 1776539109
+!i10b 1
+!s100 DdA]?OkBhb:KlA_XiAH?B3
+R2
+I7S_Cb0lfiY_FoeO9:Z1501
+R3
+R0
+Z39 w1776539094
+Z40 8assignment15.v
+Z41 Fassignment15.v
+!i122 50
+Z42 L0 11 8
+R7
+r1
+!s85 0
+31
+Z43 !s108 1776539109.000000
+Z44 !s107 assignment15.v|
+Z45 !s90 -reportprogress|300|assignment15.v|
+!i113 1
+R11
+vhalf_sub
+R38
+!i10b 1
+!s100 O_eM[z_ZCezS05VAd[=]o2
+R2
+Id:?GFk2n2F;?0B@nmSNd23
+R3
+R0
+R39
+R40
+R41
+!i122 50
+L0 1 8
+R7
+r1
+!s85 0
+31
+R43
+R44
+R45
+!i113 1
+R11
+vhalfadder
+R25
+!i10b 1
+!s100 fFjLU[SehAfA>Aj4ez2Bi1
+R2
+IQ[eeHPUMX_cQS`WGMizie3
+R3
+R0
 R26
 R27
 R28
-!i122 10
-L0 8 25
+!i122 7
+Z46 L0 1 11
 R7
 r1
 !s85 0
@@ -205,72 +315,6 @@ r1
 R29
 R30
 R31
-!i113 1
-R11
-vfull_sub
-Z32 !s110 1776539109
-!i10b 1
-!s100 DdA]?OkBhb:KlA_XiAH?B3
-R2
-I7S_Cb0lfiY_FoeO9:Z1501
-R3
-R0
-Z33 w1776539094
-Z34 8assignment15.v
-Z35 Fassignment15.v
-!i122 50
-Z36 L0 11 8
-R7
-r1
-!s85 0
-31
-Z37 !s108 1776539109.000000
-Z38 !s107 assignment15.v|
-Z39 !s90 -reportprogress|300|assignment15.v|
-!i113 1
-R11
-vhalf_sub
-R32
-!i10b 1
-!s100 O_eM[z_ZCezS05VAd[=]o2
-R2
-Id:?GFk2n2F;?0B@nmSNd23
-R3
-R0
-R33
-R34
-R35
-!i122 50
-L0 1 8
-R7
-r1
-!s85 0
-31
-R37
-R38
-R39
-!i113 1
-R11
-vhalfadder
-R19
-!i10b 1
-!s100 fFjLU[SehAfA>Aj4ez2Bi1
-R2
-IQ[eeHPUMX_cQS`WGMizie3
-R3
-R0
-R20
-R21
-R22
-!i122 7
-Z40 L0 1 11
-R7
-r1
-!s85 0
-31
-R23
-R24
-R25
 !i113 1
 R11
 vmux
@@ -296,47 +340,47 @@ R10
 !i113 1
 R11
 vmux2to1
-Z41 !s110 1776539942
+Z47 !s110 1776539942
 !i10b 1
 !s100 C?HS=CLHdPlWkbG67WalZ0
 R2
 IHz[PdFVEFSToUc?AMXbII2
 R3
 R0
-Z42 w1776539909
-Z43 8assignment16.v
-Z44 Fassignment16.v
+Z48 w1776539909
+Z49 8assignment16.v
+Z50 Fassignment16.v
 !i122 52
 L0 31 3
 R7
 r1
 !s85 0
 31
-Z45 !s108 1776539942.000000
-Z46 !s107 assignment16.v|
-Z47 !s90 -reportprogress|300|assignment16.v|
+Z51 !s108 1776539942.000000
+Z52 !s107 assignment16.v|
+Z53 !s90 -reportprogress|300|assignment16.v|
 !i113 1
 R11
 vmux41
-R12
+R18
 !i10b 1
 !s100 nzJjicT28ZgZ1dSGJ2Oi83
 R2
 I:WoDc1JRE7Fh=Nh9Ro1E_1
 R3
 R0
-R13
-R14
-R15
+R19
+R20
+R21
 !i122 44
 L0 56 15
 R7
 r1
 !s85 0
 31
-R16
-R17
-R18
+R22
+R23
+R24
 !i113 1
 R11
 vmux4to1
@@ -362,47 +406,47 @@ r1
 !i113 1
 R11
 vmux_4_1
-Z48 !s110 1776539558
+Z54 !s110 1776539558
 !i10b 1
 !s100 `IQf7Gd68gD`Vnk4oDA913
 R2
 I<2OOgjU9VYEKgSa[ddH1N3
 R3
 R0
-Z49 w1776539518
-R43
-R44
+Z55 w1776539518
+R49
+R50
 !i122 51
-R40
+R46
 R7
 r1
 !s85 0
 31
-Z50 !s108 1776539558.000000
-R46
-R47
+Z56 !s108 1776539558.000000
+R52
+R53
 !i113 1
 R11
 vmux_8_1
-R41
+R47
 !i10b 1
 !s100 1zH44oQaa4l3k@k_QXN^h3
 R2
 I:_5XK3JS@KLN9K[UnoRjb1
 R3
 R0
-R42
-R43
-R44
+R48
+R49
+R50
 !i122 52
 L0 35 16
 R7
 r1
 !s85 0
 31
-R45
-R46
-R47
+R51
+R52
+R53
 !i113 1
 R11
 vnandgate
@@ -461,7 +505,7 @@ R4
 R5
 R6
 !i122 47
-R36
+R42
 R7
 r1
 !s85 0
@@ -538,25 +582,25 @@ R10
 !i113 1
 R11
 vorgate
-R48
+R54
 !i10b 1
 !s100 QV>^O_a3WE@G4_NR5_TdV1
 R2
 Iz<TggGk>TAmOOm6c5i=zP2
 R3
 R0
+R55
 R49
-R43
-R44
+R50
 !i122 51
 L0 13 6
 R7
 r1
 !s85 0
 31
-R50
-R46
-R47
+R56
+R52
+R53
 !i113 1
 R11
 vortb
@@ -582,47 +626,47 @@ R10
 !i113 1
 R11
 vsub3
-R32
+R38
 !i10b 1
 !s100 8TcZSEfYc]<kSIfKBOQh_0
 R2
 IRhLR]?F9BQ[]AH;92TlN61
 R3
 R0
-R33
-R34
-R35
+R39
+R40
+R41
 !i122 50
 L0 20 13
 R7
 r1
 !s85 0
 31
-R37
-R38
-R39
+R43
+R44
+R45
 !i113 1
 R11
 vtb
-R41
+R12
 !i10b 1
-!s100 0m_3on>SE8nOQ0T3zEfo^1
+!s100 LfNJX]Vb?kU@S88MnlhXJ3
 R2
-I9b2F]Z=d7anBo6>7jm]=S2
+IEeemaSf8^=diVD<aMGe^Z1
 R3
 R0
-R42
-R43
-R44
-!i122 52
-L0 53 15
+R13
+R14
+R15
+!i122 69
+L0 39 19
 R7
 r1
 !s85 0
 31
-R45
-R46
-R47
+R16
+Z57 !s107 assignment19.v|
+R17
 !i113 1
 R11
 vtb_mux81
